@@ -22,6 +22,7 @@ class Aster
 }
 
 
+
 $soleil = new Aster("soleil", 5.9737*(10**24), 13000, 3000);
 $gravity = $soleil->calculGravity();
 
