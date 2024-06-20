@@ -2,10 +2,12 @@
 
 class Star extends Aster 
 {
-    public $temperature = "";
-    public $solarMass = "";
+    public $temperature = 0;
+    public $solarMass = 0;
     public function __construct($temperature, $solarMass) {
         $this-> temperature;
         $this-> solarMass;
     }
 }
+
+$soleil = new Star(5772, 1);
