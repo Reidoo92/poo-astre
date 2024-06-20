@@ -4,7 +4,7 @@ class Star extends Aster
 {
     public $temperature = 0;
     public $solarMass = 0;
-    public function __construct($temperature, $solarMass) {
+    public function __construct(float $temperature, float $solarMass) {
         $this-> temperature = $temperature;
         $this-> solarMass = $solarMass;
     }
