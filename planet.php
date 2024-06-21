@@ -1,5 +1,5 @@
 <?php
-require_once './Aster.php';
+
 class Planet extends Aster 
 {
     public $type ;
@@ -9,7 +9,7 @@ class Planet extends Aster
     public $sattelite;
     public $habitable;
 
-    public function __construct(float $name, float $mass, float $diameter, string $type ,bool $habitable, float $speed = null, bool $sattelite = null, float $rotationCenter = null){
+    public function __construct(string $name, float $mass, float $diameter, string $type ,bool $habitable, float $speed = null, bool $sattelite = null, float $rotationCenter = null){
         parent::__construct($name, $mass, $diameter, $speed = null);
         $this->type = $type ; 
         $this->rotationCenter = $rotationCenter;
@@ -28,6 +28,3 @@ class Planet extends Aster
 
 }
 
-$terre = new Planet('planete', true );
-
-$terre->deathStar();

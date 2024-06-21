@@ -1,11 +1,10 @@
 <?php
-
-require './planet.php';
+echo 'salut';
 
 class Satellite extends Planet
 {
     public $visited = TRUE;
-    public function __construct(float $name, float $mass, float $diameter, string $type ,bool $habitable, bool $visited = false, float $speed = null, bool $sattelite = null, float $rotationCenter = null) {
+    public function __construct(string $name, float $mass, float $diameter, string $type ,bool $habitable, bool $visited = false, float $speed = null, bool $sattelite = null, float $rotationCenter = null) {
         parent::__construct($name, $mass, $diameter, $type , $habitable, $speed = null, $sattelite = null, $rotationCenter = null);
         $this->visited = $visited;
     }
@@ -18,5 +17,3 @@ class Satellite extends Planet
         }
     }
 }
-
-$lune = new Satellite(true);

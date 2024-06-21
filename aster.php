@@ -8,7 +8,7 @@ class Aster
     public $speed;
     public $g =  6.674*(10**(-11));
 
-    public function __construct(float $name, float $mass, float $diameter, float $speed = null){
+    public function __construct(string $name, float $mass, float $diameter, float $speed = null){
         $this->name = $name;
         $this->mass = $mass;
         $this->diameter = $diameter;
@@ -18,10 +18,4 @@ class Aster
     public function calculGravity(){
         return $this->g * $this->mass / (($this->diameter*1000/2)**2);
     }
-
 }
-
-$soleil = new Aster("soleil", 5.9737*(10**24), 13000, 3000);
-$gravity = $soleil->calculGravity();
-
-echo $gravity;
