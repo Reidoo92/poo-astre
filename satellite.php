@@ -5,6 +5,7 @@ require './planet.php';
 class Satellite extends Planet
 {
     public $visite = TRUE;
+
     public function __construct(bool $visite = false) {
         $this->visite = $visite;
     }
@@ -16,7 +17,7 @@ class Satellite extends Planet
             return $this->name. "n'a pas été visité";
         }
     }
-    
+
 }
 
 $lune = new Satellite(true);
