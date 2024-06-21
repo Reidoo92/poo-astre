@@ -7,7 +7,7 @@ class Star extends Aster
     public $temperature = 0;
     public $solarMass = 0;
 
-    public function __construct( float $name, float $mass, float $diameter, float $speed = null, float $temperature, float $solarMass) {
+    public function __construct( string $name, float $mass, float $diameter, float $temperature, float $solarMass, float $speed = null) {
         parent::__construct($name, $mass, $diameter, $speed = null);
         $this-> temperature = $temperature;
         $this-> solarMass = $solarMass;
