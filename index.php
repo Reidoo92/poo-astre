@@ -12,7 +12,7 @@ echo $gravity;
 
 
 $lune = new Satellite('lune', 200000, 6000, 'satelitte', false, true);
-
+echo $lune;
 
 $terre = new Planet('terre', 50000, 13000, 'planete', true);
 $terre->deathStar();
