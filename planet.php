@@ -9,7 +9,8 @@ class Planet extends Aster
     public $sattelite;
     public $habitable;
 
-    public function __construct($type ,$habitable, $rotationCenter= null, $sattelite = null){
+    public function __construct(float $name, float $mass, float $diameter, string $type ,bool $habitable, float $speed = null, bool $sattelite = null, float $rotationCenter = null){
+        parent::__construct($name, $mass, $diameter, $speed = null);
         $this->type = $type ; 
         $this->rotationCenter = $rotationCenter;
         $this->sattelite = $sattelite;
