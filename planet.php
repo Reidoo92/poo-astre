@@ -24,6 +24,7 @@ class Planet extends Aster
         echo 'PIOU PIOU PIOU' . PHP_EOL;
         sleep(1);
         echo 'BOUUUUMMMM'. PHP_EOL;
+        echo 'yo';
     }
 
 }
