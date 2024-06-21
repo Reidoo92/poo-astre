@@ -1,5 +1,7 @@
 <?php
 
+require './aster.php';
+
 class Star extends Aster 
 {
     public $temperature = 0;
@@ -10,6 +12,18 @@ class Star extends Aster
         $this-> temperature = $temperature;
         $this-> solarMass = $solarMass;
     }
+
+    public function typeStar() {
+        if ($this->temperature <= 2000) {
+            return "$this->name est une naine brune!";
+        } elseif ($this->temperature > 2000 && $this->temperature< 5000){
+            return "$this->name est une naine rouge!";
+        } elseif ($this->temperature >= 5000 && $this->temperature < 6000){
+            return "$this->name est une naine jaune!";
+        }
+    }
 }
 
-$soleil = new Star(5772, 1);
+$sun = new Star(5772, 1);
+
+$sun->typeStar();

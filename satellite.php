@@ -1,5 +1,7 @@
 <?php
 
+require './planet.php';
+
 class Satellite extends Planet
 {
     public $visited = TRUE;
