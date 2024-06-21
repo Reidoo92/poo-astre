@@ -22,6 +22,5 @@ class Star extends Aster
     }
 }
 
-$sun = new Star(5772, 1);
+$oleil = new Star(5772, 1);
 
-$sun->typeStar();
