@@ -1,5 +1,7 @@
 <?php
 
+require './aster.php';
+
 class Star extends Aster 
 {
     public $temperature = 0;
@@ -20,4 +22,6 @@ class Star extends Aster
     }
 }
 
-$soleil = new Star(5772, 1);
+$sun = new Star(5772, 1);
+
+$sun->typeStar();
