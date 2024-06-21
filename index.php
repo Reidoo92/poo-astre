@@ -20,3 +20,4 @@ $terre->deathStar();
 
 $sun = new Star('Soleil', 600000, 54545, 5772, 1);
 $sun->typeStar();
+
